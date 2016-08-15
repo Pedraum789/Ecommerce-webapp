@@ -1,6 +1,6 @@
-A Full stack web application 
+A full stack web application. 
 
-which allows sellers to list their products and buyers to buy them on a platform administered by an admin.
+It allows sellers to list their products and buyers to buy them on a platform administered by an admin.
 
 Developed in spring and hibernate, Database used is MySql.
 
