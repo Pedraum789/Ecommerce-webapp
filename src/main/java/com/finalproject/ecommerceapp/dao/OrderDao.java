@@ -1,16 +1,14 @@
 package com.finalproject.ecommerceapp.dao;
 
 
-import java.util.List;
-
-
-import org.hibernate.HibernateException;
-import org.hibernate.Query;
-
 import com.finalproject.ecommerceapp.exception.AdException;
 import com.finalproject.ecommerceapp.pojos.CartItemBean;
 import com.finalproject.ecommerceapp.pojos.CustomerBean;
 import com.finalproject.ecommerceapp.pojos.OrderBean;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+
+import java.util.List;
 
 public class OrderDao extends DAO {
 

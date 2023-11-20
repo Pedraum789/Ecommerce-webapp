@@ -1,12 +1,12 @@
 package com.finalproject.ecommerceapp.dao;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DAO {
 

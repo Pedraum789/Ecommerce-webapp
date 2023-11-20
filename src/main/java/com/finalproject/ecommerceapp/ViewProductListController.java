@@ -1,18 +1,6 @@
 package com.finalproject.ecommerceapp;
 
 
-import java.util.List;
-
-import javax.servlet.http.HttpSession;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
 import com.finalproject.ecommerceapp.dao.DAO;
 import com.finalproject.ecommerceapp.dao.ProductDao;
 import com.finalproject.ecommerceapp.dao.SupplierAccountDao;
@@ -22,6 +10,16 @@ import com.finalproject.ecommerceapp.pojos.ProductBean;
 import com.finalproject.ecommerceapp.pojos.SupplierBean;
 import com.finalproject.ecommerceapp.pojos.UserAccountBean;
 import com.finalproject.ecommerceapp.validator.ProductValidation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 
 @Controller

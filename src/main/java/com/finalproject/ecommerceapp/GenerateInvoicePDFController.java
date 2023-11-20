@@ -1,9 +1,7 @@
 package com.finalproject.ecommerceapp;
 
-import java.util.Locale;
-
-import javax.servlet.http.HttpSession;
-
+import com.finalproject.ecommerceapp.pojos.CustomerBean;
+import com.finalproject.ecommerceapp.pojos.OrderBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.finalproject.ecommerceapp.pojos.CustomerBean;
-import com.finalproject.ecommerceapp.pojos.OrderBean;
+import javax.servlet.http.HttpSession;
+import java.util.Locale;
 
 
 

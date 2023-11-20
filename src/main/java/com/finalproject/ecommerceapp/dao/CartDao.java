@@ -1,14 +1,13 @@
 package com.finalproject.ecommerceapp.dao;
 
-import java.util.HashSet;
-import java.util.List;
-
-import org.hibernate.HibernateException;
-import org.hibernate.Query;
-
 import com.finalproject.ecommerceapp.exception.AdException;
 import com.finalproject.ecommerceapp.pojos.CartItemBean;
 import com.finalproject.ecommerceapp.pojos.CustomerBean;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+
+import java.util.HashSet;
+import java.util.List;
 
 public class CartDao extends DAO {
 

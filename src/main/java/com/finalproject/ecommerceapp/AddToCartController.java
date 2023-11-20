@@ -1,8 +1,12 @@
 package com.finalproject.ecommerceapp;
 
 
-import javax.servlet.http.HttpSession;
-
+import com.finalproject.ecommerceapp.dao.*;
+import com.finalproject.ecommerceapp.exception.AdException;
+import com.finalproject.ecommerceapp.pojos.CartItemBean;
+import com.finalproject.ecommerceapp.pojos.CustomerBean;
+import com.finalproject.ecommerceapp.pojos.ProductBean;
+import com.finalproject.ecommerceapp.pojos.UserAccountBean;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
@@ -11,18 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.finalproject.ecommerceapp.dao.CartDao;
-import com.finalproject.ecommerceapp.dao.CartItemDao;
-import com.finalproject.ecommerceapp.dao.DAO;
-import com.finalproject.ecommerceapp.dao.ProductDao;
-import com.finalproject.ecommerceapp.dao.SupplierAccountDao;
-import com.finalproject.ecommerceapp.dao.UserAccountBeanDao;
-import com.finalproject.ecommerceapp.exception.AdException;
-import com.finalproject.ecommerceapp.pojos.CartItemBean;
-import com.finalproject.ecommerceapp.pojos.CustomerBean;
-import com.finalproject.ecommerceapp.pojos.ProductBean;
-import com.finalproject.ecommerceapp.pojos.SupplierBean;
-import com.finalproject.ecommerceapp.pojos.UserAccountBean;
+import javax.servlet.http.HttpSession;
 
 
 @Controller

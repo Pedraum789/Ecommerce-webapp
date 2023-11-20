@@ -1,19 +1,13 @@
 package com.finalproject.ecommerceapp.dao;
 
-import java.util.List;
-
+import com.finalproject.ecommerceapp.exception.AdException;
+import com.finalproject.ecommerceapp.pojos.*;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.criterion.Restrictions;
 
-import com.finalproject.ecommerceapp.exception.AdException;
-import com.finalproject.ecommerceapp.pojos.CategoryBean;
-import com.finalproject.ecommerceapp.pojos.CustomerBean;
-import com.finalproject.ecommerceapp.pojos.ProductBean;
-import com.finalproject.ecommerceapp.pojos.ReviewBean;
-import com.finalproject.ecommerceapp.pojos.SupplierBean;
-import com.finalproject.ecommerceapp.pojos.UserAccountBean;
+import java.util.List;
 
 public class ProductDao extends DAO {
 

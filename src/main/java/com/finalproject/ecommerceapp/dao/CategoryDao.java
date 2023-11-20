@@ -1,12 +1,11 @@
 package com.finalproject.ecommerceapp.dao;
 
-import java.util.List;
-
+import com.finalproject.ecommerceapp.exception.AdException;
+import com.finalproject.ecommerceapp.pojos.CategoryBean;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 
-import com.finalproject.ecommerceapp.exception.AdException;
-import com.finalproject.ecommerceapp.pojos.CategoryBean;
+import java.util.List;
 
 public class CategoryDao extends DAO {
 

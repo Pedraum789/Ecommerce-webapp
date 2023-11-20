@@ -1,7 +1,10 @@
 package com.finalproject.ecommerceapp;
 
-import javax.servlet.http.HttpSession;
-
+import com.finalproject.ecommerceapp.dao.CategoryDao;
+import com.finalproject.ecommerceapp.dao.DAO;
+import com.finalproject.ecommerceapp.exception.AdException;
+import com.finalproject.ecommerceapp.pojos.CategoryBean;
+import com.finalproject.ecommerceapp.validator.CategoryValidation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,11 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
 
-import com.finalproject.ecommerceapp.dao.DAO;
-import com.finalproject.ecommerceapp.dao.CategoryDao;
-import com.finalproject.ecommerceapp.exception.AdException;
-import com.finalproject.ecommerceapp.pojos.CategoryBean;
-import com.finalproject.ecommerceapp.validator.CategoryValidation;;
+import javax.servlet.http.HttpSession;
+
+;
 
 @Controller
 @RequestMapping("/addCategory.htm")

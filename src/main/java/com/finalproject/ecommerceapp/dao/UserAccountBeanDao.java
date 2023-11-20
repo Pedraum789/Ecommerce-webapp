@@ -1,16 +1,12 @@
 package com.finalproject.ecommerceapp.dao;
 
 
-
+import com.finalproject.ecommerceapp.exception.AdException;
+import com.finalproject.ecommerceapp.pojos.*;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 
-import com.finalproject.ecommerceapp.exception.AdException;
-import com.finalproject.ecommerceapp.pojos.AddressBean;
-import com.finalproject.ecommerceapp.pojos.CustomerBean;
-import com.finalproject.ecommerceapp.pojos.RoleBean;
-import com.finalproject.ecommerceapp.pojos.SupplierBean;
-import com.finalproject.ecommerceapp.pojos.UserAccountBean;;
+;
 
 public class UserAccountBeanDao extends DAO {
 

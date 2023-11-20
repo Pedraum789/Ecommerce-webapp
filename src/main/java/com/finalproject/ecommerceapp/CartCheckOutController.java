@@ -1,11 +1,8 @@
 package com.finalproject.ecommerceapp;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.servlet.http.HttpSession;
-
+import com.finalproject.ecommerceapp.dao.*;
+import com.finalproject.ecommerceapp.exception.AdException;
+import com.finalproject.ecommerceapp.pojos.*;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
@@ -16,21 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
 
-import com.finalproject.ecommerceapp.dao.CartDao;
-import com.finalproject.ecommerceapp.dao.CartItemDao;
-import com.finalproject.ecommerceapp.dao.DAO;
-import com.finalproject.ecommerceapp.dao.InvoiceDao;
-import com.finalproject.ecommerceapp.dao.OrderDao;
-import com.finalproject.ecommerceapp.dao.OrderItemDao;
-import com.finalproject.ecommerceapp.dao.PaymentDao;
-import com.finalproject.ecommerceapp.dao.UserAccountBeanDao;
-import com.finalproject.ecommerceapp.exception.AdException;
-import com.finalproject.ecommerceapp.pojos.CartItemBean;
-import com.finalproject.ecommerceapp.pojos.CustomerBean;
-import com.finalproject.ecommerceapp.pojos.OrderBean;
-import com.finalproject.ecommerceapp.pojos.OrderItemBean;
-import com.finalproject.ecommerceapp.pojos.PaymentBean;
-import com.finalproject.ecommerceapp.pojos.UserAccountBean;
+import javax.servlet.http.HttpSession;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Controller
 @RequestMapping("/checkOut.htm")

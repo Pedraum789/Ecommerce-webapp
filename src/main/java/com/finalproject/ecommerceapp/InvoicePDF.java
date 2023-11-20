@@ -1,12 +1,5 @@
 package com.finalproject.ecommerceapp;
 
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.web.servlet.view.document.AbstractPdfView;
-
 import com.finalproject.ecommerceapp.pojos.CustomerBean;
 import com.finalproject.ecommerceapp.pojos.OrderBean;
 import com.finalproject.ecommerceapp.pojos.OrderItemBean;
@@ -14,6 +7,11 @@ import com.lowagie.text.Document;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.Table;
 import com.lowagie.text.pdf.PdfWriter;
+import org.springframework.web.servlet.view.document.AbstractPdfView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
 
 
 

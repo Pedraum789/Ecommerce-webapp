@@ -3,7 +3,6 @@ package com.finalproject.ecommerceapp.validator;
 
 import com.finalproject.ecommerceapp.pojos.ProductBean;
 import com.finalproject.ecommerceapp.pojos.UserAccountBean;
-
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
